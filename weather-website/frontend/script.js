@@ -1,5 +1,5 @@
 let weather = {
-    "apikey": "your_api_key", // You can remove this if backend handles the key
+    "apikey": "your_api_key",
     fetchWeather: function(city) {
         fetch(`https://your-api-gateway-url/weather?city=${city}`)
         .then((response) => response.json())
@@ -37,4 +37,4 @@ document.querySelector(".searchbar").addEventListener("keyup", function(event) {
     }
 });
 
-weather.fetchWeather("durgapur");
+weather.fetchWeather(" ");
